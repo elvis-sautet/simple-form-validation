@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+	
+	<link rel="stylesheet" href="./index.css">
+    <title>FORM VALIDATION</title>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-slate-900 min-h-screen flex items-center justify-center"
+    >
+      <div
+        class="backdrop-blur-sm bg-white/80 p-5 max-w-md w-full rounded-md shadow-white/10 shadow-sm"
+      >
+        <form
+		id="login"
+          class="text-black text-md flex flex-col space-y-3"
+          autocomplete="off"
+        >
+          <div class="flex flex-col w-full space-y-3 tracking-wide">
+            <label class="text-lg tracking-wide font-mono" 
+			for="firstName"></label>
+              First Name</label
+            >
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="border-2 firstName w-full p-2 rounded-lg focus:outine-none focus:outline-none"
+              autocomplete="off"
+              aria-autocomplete="off"
+            />
+			<span class="block firstNameError text-red-500 text-xs hidden">error</span>
+          </div>
+          <div lass="flex flex-col w-full space-y-3 tracking-wide">
+            <label class="text-lg tracking-wide font-mono" for="firstName">
+              Last Name</label
+            >
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              class="border-2 lastName w-full p-2 rounded-lg focus:outine-none focus:outline-none"
+              autocomplete="off"
+            />
+			<span class="block lastNameError text-red-500 text-xs hidden">error</span>
+          </div>
+          <div lass="flex flex-col w-full space-y-3 tracking-wide">
+            <label  class="text-lg tracking-wide font-mono" for="email"> Your Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="border-2 email w-full p-2 rounded-lg focus:outine-none focus:outline-none"
+              autocomplete="off"
+            />
+			<span class="block emailError text-red-500 text-xs  hidden">error</span>
+          </div>
+          <div class="">
+            <input value="Login Now" type="submit" id="btn" class="px-4 py-3 mt-5 rounded-md bg-slate-600 w-full text-white tracking-wide transition-all duration-300 ease-in-out hover:bg-slate-900 
+			cursor-pointer disabled:cursor-not-allowed disabled:opacity-20"/>
+			
+          </div>
+        </form>
+      </div>
+    </div>
+	    <script  src="./index.js"></script>
+
+  </body>
+</html>
